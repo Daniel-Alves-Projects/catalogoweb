@@ -1,0 +1,140 @@
+/* --- Configurações Gerais --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- Cabeçalho e Rodapé (compartilhado) --- */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Container Principal (compartilhado) --- */
+main {
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 20px auto;  /* Centraliza o 'main' na página */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #444;
+}
+
+/* --- Estilos para a LISTA DE PRODUTOS (index.php) --- */
+
+/* Usamos Flexbox para criar o grid de produtos */
+.lista-produtos {
+    display: flex;          /* Ativa o Flexbox */
+    flex-wrap: wrap;        /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px;              /* Espaço entre os cards */
+}
+
+/* Estilo de cada "card" de produto */
+.produto-card {
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.produto-card:hover {
+    transform: translateY(-5px); /* Levanta o card levemente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.produto-card a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333;
+}
+
+.produto-card img {
+    width: 100%;             /* Faz a imagem ocupar 100% da largura do card */
+    height: 200px;           /* Altura fixa para todas as imagens */
+    object-fit: cover;       /* Garante que a imagem cubra o espaço, sem distorcer */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.produto-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.1em;
+    min-height: 50px; /* Garante que os cards tenham alturas parecidas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Estilos para os DETALHES DO PRODUTO (produto.php) --- */
+
+.detalhe-produto h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Galeria de imagens */
+.galeria-imagens {
+    display: flex;
+    justify-content: space-around; /* Espaça as imagens igualmente */
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.galeria-imagens img {
+    width: 100%;
+    max-width: 350px;       /* Limita o tamanho máximo da imagem */
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* Seções de Descrição e Ficha Técnica */
+.descricao, .ficha-tecnica {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.descricao p {
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.ficha-tecnica a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.ficha-tecnica a:hover {
+    background-color: #0056b3;
+}

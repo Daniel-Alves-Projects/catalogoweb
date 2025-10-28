@@ -1,0 +1,24 @@
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    ficha_tecnica VARCHAR(255),
+    imagem1 VARCHAR(255),
+    imagem2 VARCHAR(255),
+    imagem3 VARCHAR(255)
+);
+
+
+
+
+insert de produtos:
+
+
+INSERT INTO produtos 
+(nome, descricao, ficha_tecnica, imagem1, imagem2, imagem3) 
+VALUES 
+('Smartphone X Pro', 'O smartphone mais rápido do mercado, com câmera tripla de 108MP e tela AMOLED de 120Hz. Perfeito para fotos e jogos.', 'ficha_smartphone_x_pro.pdf', 'smartphone_frente.jpg', 'smartphone_tras.jpg', 'smartphone_camera_detalhe.jpg'),
+('Notebook Ultra Fino Z1', 'Perfeito para trabalho e estudos. Processador de última geração, 16GB de RAM e SSD de 1TB. Leve, potente e com bateria de longa duração.', 'ficha_notebook_z1.pdf', 'notebook_aberto.png', 'notebook_fechado.png', 'notebook_teclado.png'),
+('Fone de Ouvido Sem Fio AirSound', 'Cancelamento de ruído ativo, 30 horas de bateria e design ergonômico. Som cristalino para suas músicas e chamadas.', 'ficha_fone_airsound.pdf', 'fone_principal.jpg', 'fone_case.jpg', 'fone_uso.jpg'),
+('Relógio Inteligente FitMax 5', 'Monitore sua saúde 24/7. GPS integrado, medição de oxigênio no sangue (SpO2) e mais de 50 modos de esporte. Bateria para 10 dias.', 'ficha_smartwatch_fitmax.pdf', 'smartwatch_display.jpg', 'smartwatch_pulseira.jpg', 'smartwatch_perfil.jpg'),
+('Câmera Mirrorless Alpha 7', 'Capture momentos inesquecíveis com qualidade profissional. Sensor Full-Frame de 24.2MP, estabilização de 5 eixos e gravação em 4K.', 'ficha_camera_alpha7.pdf', 'camera_frente.jpg', 'camera_lente.jpg', 'camera_visor.jpg');
